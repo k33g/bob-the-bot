@@ -1,0 +1,21 @@
+# this is a test
+
+stages:
+  - 🦄tests
+  - 🚀deploy
+
+🤞some-tests:
+  only:
+    - master
+  stage: 🦄tests
+  script:
+    - echo "all fine 😃"
+    #- exit 1 # Failure 😡
+    #- exit 0 # Success 😃
+
+🚢go:
+  only:
+    - master
+  stage: 🚀deploy
+  script:
+    - echo "all fine 😃 ith deployment"
